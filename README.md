@@ -16,7 +16,6 @@ A browser extension designed to promote mental health and well-being while using
 - Facebook
 - Instagram
 - Twitter
-- TikTok
 
 ## Installation
 
