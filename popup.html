@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Guardian</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mental Health Guardian</h1>
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Active</span>
+            </div>
+        </header>
+
+        <section class="usage-stats">
+            <h2>Today's Usage</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-value" id="time-used">0h 0m</span>
+                    <span class="stat-label">Time Used</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="content-filtered">0</span>
+                    <span class="stat-label">Posts Filtered</span>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="usage-progress"></div>
+            </div>
+        </section>
+
+        <section class="settings">
+            <h2>Settings</h2>
+            
+            <div class="setting-group">
+                <h3>Daily Time Limit</h3>
+                <div class="time-limit-controls">
+                    <input type="number" id="hours-limit" min="0" max="24" value="2">
+                    <span>hours</span>
+                    <input type="number" id="minutes-limit" min="0" max="59" value="0">
+                    <span>minutes</span>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <h3>Content Filters</h3>
+                <div class="filter-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="filter-negative" checked>
+                        <span class="checkmark"></span>
+                        Negative Content
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="filter-triggering" checked>
+                        <span class="checkmark"></span>
+                        Triggering Content
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="filter-comparison" checked>
+                        <span class="checkmark"></span>
+                        Comparison Content
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="filter-ads" checked>
+                        <span class="checkmark"></span>
+                        Excessive Ads
+                    </label>
+                </div>
+
+                <div class="sensitivity-controls">
+                    <h4>Content Sensitivity</h4>
+                    <div class="sensitivity-slider">
+                        <label for="news-sensitivity">News & Public Information</label>
+                        <input type="range" id="news-sensitivity" min="1" max="5" value="3" class="slider">
+                        <div class="sensitivity-labels">
+                            <span>More Inclusive</span>
+                            <span>Balanced</span>
+                            <span>More Filtered</span>
+                        </div>
+                    </div>
+                    <div class="sensitivity-slider">
+                        <label for="social-sensitivity">Social Content</label>
+                        <input type="range" id="social-sensitivity" min="1" max="5" value="4" class="slider">
+                        <div class="sensitivity-labels">
+                            <span>More Inclusive</span>
+                            <span>Balanced</span>
+                            <span>More Filtered</span>
+                        </div>
+                    </div>
+                    <div class="sensitivity-info">
+                        <p>Level 1: Only extreme content is filtered</p>
+                        <p>Level 3: Balanced filtering for general content</p>
+                        <p>Level 5: Strict filtering, including mild negative content</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <h3>Mental Health Tips</h3>
+                <div class="tips-controls">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="enable-tips" checked>
+                        <span class="checkmark"></span>
+                        Show Mental Health Tips
+                    </label>
+                    <select id="tips-frequency">
+                        <option value="hourly">Hourly</option>
+                        <option value="daily" selected>Daily</option>
+                        <option value="weekly">Weekly</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="positive-content">
+            <h2>Positive Content</h2>
+            <div class="content-suggestions">
+                <button id="show-positive" class="action-button">Show Positive Content</button>
+                <button id="take-break" class="action-button">Take a Break</button>
+            </div>
+        </section>
+
+        <footer>
+            <button id="save-settings" class="primary-button">Save Settings</button>
+            <div class="version">Version 1.0.0</div>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 

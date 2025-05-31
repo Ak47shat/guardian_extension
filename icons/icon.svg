@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="64" cy="64" r="60" fill="#4a90e2" opacity="0.1"/>
+    
+    <!-- Shield shape -->
+    <path d="M64 8 L108 28 V60 C108 85 86 107 64 120 C42 107 20 85 20 60 V28 L64 8Z" 
+          fill="#4a90e2" stroke="#4a90e2" stroke-width="4"/>
+    
+    <!-- Heart symbol -->
+    <path d="M64 45 C64 45 72 35 84 35 C96 35 100 45 100 55 C100 75 84 85 64 95 C44 85 28 75 28 55 C28 45 32 35 44 35 C56 35 64 45 64 45Z" 
+          fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Checkmark -->
+    <path d="M45 65 L55 75 L75 55" 
+          stroke="#4a90e2" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 
